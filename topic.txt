@@ -1,0 +1,6 @@
+1. JSON
+2. YAML
+3. requests
+4. Django
+5. rest framework
+6. puppet
