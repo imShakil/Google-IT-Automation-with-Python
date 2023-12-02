@@ -4,3 +4,5 @@
 4. Django
 5. rest framework
 6. puppet
+7. smtplib, smtp, mime
+8. reportlab
