@@ -88,7 +88,7 @@ def main(argv):
   """Process the JSON data and generate a full report out of it."""
   data = load_data("car_sales.json")
   summary = process_data(data)
-  print(summary)
+  #print(summary)
   # TODO: turn this into a PDF report
   data = sorted(data, key=lambda k: k['total_sales'], reverse=True) # Optional Challenge
   pie_data = summary[3]
@@ -103,8 +103,7 @@ def main(argv):
   body = "{}\n{}\n{}\n".format(summary[0], summary[1], summary[2])
   attachment = "cars.pdf"
   msg = emails.generate(sender=sender, recipient=recipient, subject=subject, body=body, attachment_path=attachment)
-  print(pie_data)
-  #emails.send(msg)
+  emails.send(msg)
 
 
 if __name__ == "__main__":
